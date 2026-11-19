@@ -1,0 +1,26 @@
+# 用 BOOT 按键调节背光
+
+[English](README.md) | [简体中文](README_ZH.md)
+
+## 功能
+
+将 BOOT 按键映射到 LVGL 滑块，并通过 PWM 调节 LCD 背光。
+
+## 硬件需求
+
+- ESP32-S3-LCD-2 开发板和 USB 数据线
+
+## 怎么运行
+
+1. 在开发板管理器中安装 [仓库首页](../../../../README_ZH.md) 所列版本的 Arduino-ESP32。
+2. 将项目文件夹位置设为 `examples/arduino/`，或将 [随附的库](../../libraries/) 复制到项目文件夹下的 `libraries` 目录。
+3. 选择 **ESP32S3 Dev Module**，并按 [产品配置](../../../../.github/product.json) 设置「工具」菜单。
+4. 打开本目录中的 `.ino` 文件并上传。
+
+## 预期现象
+
+短按 BOOT 降低亮度，长按 BOOT 提高亮度。屏幕上的滑块位置和亮度百分比随之变化。
+
+## 常见问题
+
+暂无。
